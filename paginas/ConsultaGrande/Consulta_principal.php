@@ -236,7 +236,7 @@ $conn->close();
             </div>
 
             <button type="submit" class="btn btn-primary">Consultar</button>
-            <a id="downloadPdfBtn" class="btn btn-success mt-3" href="consultarReporteMatutino.php" target="_blank">Descargar Reporte Mensual</a>
+            
         </form>
 
         <!-- Aquí se muestra la tabla de resultados o el mensaje de no resultados -->
@@ -251,6 +251,7 @@ $conn->close();
         </div>
 
         <a href="../../principal.php" class="btn btn-secondary mt-3">Volver</a>
+        <a id="downloadPdfBtn" class="btn btn-success mt-3" href="consultarReporteMatutino.php" target="_blank">Descargar Reporte Mensual</a>
     </div>
     <?php
     // Incluir la alerta si existe
