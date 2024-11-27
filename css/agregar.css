@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #343a40;
+}
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+}
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+textarea.form-control {
+    resize: none;
+}
+.btn-custom, .btn-log {
+    margin: 10px 0;
+}
+.icono-personalizado {
+    margin-right: 5px;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/bg.png') no-repeat center top;
+    background-size: cover;
+    border-radius: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 5%;
+    border: 2px solid #000000;
+    position: relative;
+    overflow-x: auto;
+
+}
+
+h1 {
+    font-size: 1.8rem; /* Cambia el tamaño según necesites */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Cambia el tamaño según necesites */
+  }
+  h3 {
+    font-size: 1.3rem; /* Cambia el tamaño según necesites */
+  }
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+  }
+
+  th, td {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
+    padding: 5px; 
+    text-align: center;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+th {
+    background-color: #b4b4b4;
+}
+
+.icono-personalizado {
+    font-size: 1.5rem; 
+  }
+  .btn:hover {
+    transform: scale(1.2); /* Ajusta el valor de escala según prefieras */
+    transition: transform 0.1s ease; /* Añade una transición suave */
+  }
+  
+  a .icono-personalizado:hover {
+    transform: scale(1.3);
+    transition: transform 0.1s ease;
+  }
+
+.btn_new, .link_edit, .btn-actualizar,
+.link_delete, .link_consulta, .link_consulta_general {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000000;
+    color: #060606;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn_new:hover, .link_edit:hover, .btn-actualizar:hover,
+.link_delete:hover, .link_consulta:hover, .link_consulta_general:hover {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.btn_new {
+    right: auto;
+    transform: translateY(30%);
+    cursor: pointer;
+    position: relative;
+    top: 3%;
+}
+
+.a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000000;
+    color: #060606;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.confirmation {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.editable-field {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+select#tipo_maquina, select#mes, select#turno {
+    /* Estilo para los select */
+    /* espacio entre los elementos */
+    margin-bottom: 10px;
+    
+    width: 32%;
+    /*centrar el select*/
+    /* Alineación del texto */
+    text-align: center;
+    background-color: whitesmoke; /* Color de fondo */
+    color: black; /* Color del texto */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: 2px solid black; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /*color de las opciones*/
+    color: black;
+    /*color de fondo de las opciones*/
+    background-color: white;
+    /*color de fondo al pasar el ratón por encima*/
+    background-color: whitesmoke;
+}
+select option:hover {
+    background-color: white;
+}
+
+select#tipo_maquina:hover, select#mes:hover, select#turno:hover {
+    background-color: black; /* Color de fondo al pasar el ratón por encima */
+    color: white;
+    /*color de fondo de las opciones*/
+    background-color: black;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+select#tipo_maquina:active, select#mes:active, select#turno:active {
+    background-color: black; /* Color de fondo al hacer clic */
+    box-shadow: 0 5px #666; /* Sombra al hacer clic */
+    color: white; /* Color del texto al hacer clic */
+    transform: scale(1.1); /* Escala al hacer clic */
+}
+
+select option:hover {
+    background-color: white;
+}
+
+.hide-option {
+    display: none;
+}
