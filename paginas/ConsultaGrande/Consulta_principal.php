@@ -1,7 +1,7 @@
 <?php
 require_once('../../TCPDF-main/tcpdf.php'); // Ruta a tu archivo TCPDF
 session_start();
-include "../../Conexion.php";
+include "../../CONEXION.php";
 
 // Configurar la localización en español
 setlocale(LC_TIME, 'es_ES.UTF-8');

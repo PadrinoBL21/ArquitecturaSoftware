@@ -1,5 +1,5 @@
 <?php
-include '../../Conexion.php';
+include '../../CONEXION.php';
 require_once('../../TCPDF-main/tcpdf.php');
 session_start();
 $maquina_id = isset($_SESSION['maquina_id']) ? $_SESSION['maquina_id'] : 'ID de la Máquina No Disponible';
