@@ -1,5 +1,5 @@
 <?php
-include "../../Conexion.php";
+include "../../CONEXION.php";
 
 function test_input($data) {
     $data = trim($data);
