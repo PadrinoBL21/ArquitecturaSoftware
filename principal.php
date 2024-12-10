@@ -64,7 +64,7 @@ if (isset($_SESSION['username'])) {
 
             <div class="text">
 
-                <h1>Bienvenido<?php echo $nombreUsuario; ?></h1>                
+                <h1>Bienvenido: <?php echo $nombreUsuario; ?></h1>                
                 <h2 class="subtitle">Inició sesión con rol de: <?php echo $nombreRol; ?></h2>
             </div>
         </div>
