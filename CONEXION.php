@@ -4,9 +4,18 @@ $username = "admin";
 $password = "CPmobl16";
 $dbname = "bitacorasmantenimientoop2";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+try {
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    
+    // Verificar conexión
+    if ($conn->connect_error) {
+        throw new Exception("Conexión fallida: " . $conn->connect_error);
+    }
+} catch (Exception $e) {
+    // Guardar detalles del error en un archivo de registro
+    error_log($e->getMessage(), 3, "error_log.txt");
+    
+    // Mostrar mensaje genérico al usuario
+    die("Ocurrió un error con la conexión a la BD, contactar con el administrador de TI.");
 }
 ?>
